@@ -1,0 +1,27 @@
+def input():
+	for i in range(numofprocessor):
+	processor.append([])
+	processor[i].append(raw_input("enter name of pro: "))
+	processor[i].append(int(raw_input("enter arrival time: ")))
+ 	processor[i].append(int(raw_input("enter burst time: ")))
+	return;
+def sorting():
+	processor.sort(key=lambda processor:processor[2])
+	return;
+
+def print(int numofprocessor):
+	for i in range(n):
+	print processor[i][0],'\t',processor[i][1],'\t',processor[i][2],'\t','\n'
+	return;
+
+
+numofprocessor=0
+processor = []
+i=0
+numofprocessor= int(raw_input("Enter no of processes: "))
+input()
+#now sorting
+sorting()
+#now printing
+i=0
+print(n)
